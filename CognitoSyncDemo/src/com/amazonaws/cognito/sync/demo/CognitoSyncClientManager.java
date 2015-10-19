@@ -36,8 +36,8 @@ public class CognitoSyncClientManager {
      * region where it belongs. Get this information from the AWS console.
      */
 
-    private static final String IDENTITY_POOL_ID = "IDENTITY_POOL_ID";
-    private static final Regions REGION = Regions.US_EAST_1;
+    private static final String IDENTITY_POOL_ID = "ap-northeast-1:064885f9-6ccc-4866-a564-f1bf00286241";
+    private static final Regions REGION = Regions.AP_NORTHEAST_1;
 
     private static CognitoSyncManager syncClient;
     protected static CognitoCachingCredentialsProvider credentialsProvider = null;
@@ -47,7 +47,7 @@ public class CognitoSyncClientManager {
      * Set this flag to true for using developer authenticated identities
      * Make sure you configured it in DeveloperAuthenticationProvider.java.
      */
-    private static boolean useDeveloperAuthenticatedIdentities = false;
+    private static boolean useDeveloperAuthenticatedIdentities = true;
 
 
     /**
